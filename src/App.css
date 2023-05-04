@@ -1,38 +1,28 @@
+body {
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, rgb(247, 2, 2, 0.7), rgb(255, 254, 254, 0.4));
+}
+
 .App {
-  text-align: center;
+    border: 1px solid black;
+    position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel-container {
+    width: 70rem;
+    position: absolute;
+    margin: auto;
+    inset: 6rem 0 0 0;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.carousel-box {
+    box-shadow: 4px 6px 24px 1px rgba(0, 0, 0, 0.55);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel-box:hover {
+    transform: scale(1.01);
+    transition: ease-in-out 1s;
 }
